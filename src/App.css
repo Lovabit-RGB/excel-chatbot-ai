@@ -1,0 +1,99 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.app-header {
+  text-align: center;
+  padding: 40px 20px;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.app-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.app-header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.app-nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  flex-wrap: wrap;
+}
+
+.nav-btn {
+  padding: 10px 20px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.nav-btn:hover {
+  background: white;
+  color: #667eea;
+}
+
+.nav-btn.active {
+  background: white;
+  color: #667eea;
+}
+
+.app-content {
+  flex: 1;
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.app-footer {
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+}
+
+.monetization-stats {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .app-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .app-nav {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .nav-btn {
+    width: 100%;
+  }
+
+  .app-content {
+    padding: 20px 10px;
+  }
+}
