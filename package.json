@@ -1,0 +1,37 @@
+{
+  "name": "excel-chatbot-ai",
+  "version": "1.0.0",
+  "description": "AI-powered chatbot for Excel guide, calculations, and file generation with image-to-Excel conversion",
+  "main": "src/index.js",
+  "homepage": "./",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "electron": "electron .",
+    "electron-dev": "concurrently \"npm start\" \"wait-on http://localhost:3000 && electron .\"",
+    "electron-build": "npm run build && electron-builder",
+    "test": "react-scripts test"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "axios": "^1.6.0",
+    "exceljs": "^4.3.0",
+    "xlsx": "^0.18.5",
+    "tesseract.js": "^4.1.1",
+    "sharp": "^0.32.0"
+  },
+  "devDependencies": {
+    "react-scripts": "5.0.1",
+    "electron": "^24.0.0",
+    "electron-builder": "^24.0.0",
+    "concurrently": "^8.0.0"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [">0.2%", "not dead", "not op_mini all"],
+    "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"]
+  }
+}
